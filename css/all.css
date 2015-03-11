@@ -1,0 +1,239 @@
+@-webkit-keyframes hue {
+  0%   { filter: hue-rotate(0deg) }
+  100% { filter: hue-rotate(360deg) }
+}
+
+@keyframes hue {
+  0%   { filter: hue-rotate(0deg) }
+  100% { filter: hue-rotate(360deg) }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+  overflow-x: hidden;
+}
+a {
+  color: #00A3DA;
+  text-decoration: none;
+  -webkit-transition: background .025s ease-in-out, color .025s ease-in-out;
+  -moz-transition: background .025s ease-in-out, color .025s ease-in-out;
+  transition: background .025s ease-in-out, color .025s ease-in-out;
+}
+p {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+h1, h2, h3, .primary a {
+  font-family: Klinik, serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.wrap {
+  margin: 0 auto;
+  max-width: 60em;
+  padding: 1em;
+}
+.sidebar {
+  background: #fae06e;
+  padding: 1em;
+  text-align: center;
+}
+.rsvp {
+  border: solid #3b3b3b;
+  overflow: auto;
+  color: #3b3b3b;
+}
+.rsvp h2 {
+  font-size: 1.3em;
+}
+.rsvp .paul {
+  float: right;
+}
+.rsvp p {
+  margin-bottom: 0
+}
+.rsvp p a {
+  display: block;
+  margin: 1em 0;
+}
+.a11y-hide {
+  color: transparent;
+  display: block;
+  font-size: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+img {
+  max-width: 100%;
+}
+.sitehead {
+  background: #fae06e url(../img/niteroi.jpg) center 0 no-repeat scroll;
+  background-size: cover;
+  padding-bottom: 16em;
+  -webkit-animation: hue 60s linear 12s infinite;
+  animation: hue 60s linear 12s infinite;
+}
+.logo {
+  padding: 0.4em;
+  position: relative;
+  margin: 0 auto 1em;
+  background-color: #fae06e;
+  width: 200px;
+  text-align: center;
+}
+.primary {
+  margin-bottom: 1px; /* fixes a Chrome rounding error */
+  text-align: center;
+  width: 100%;
+}
+.primary:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.primary a, .sidebar a.call {
+  border: solid #3b3b3b;
+  border-width: 2px 2px 2px 2px;
+  color: #FBDF66;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  min-width: 50%;
+  padding: .2em.5em;
+  background: #3b3b3b;
+}
+.primary a:hover, .sidebar a.call:hover {
+  background: #FBDF66;
+  color: #3b3b3b;
+}
+.eventhead {
+  margin-bottom: 2em;
+}
+.event {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+.event .meta {
+  font-family: Open Sans, sans-serif;
+  font-size: .7em;
+  display: block;
+}
+.event .num {
+  background: #ffeb94;
+  display: inline-block;
+  font-family: Klinik, serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0 .1em;
+}
+.past-events ul {
+  margin: .25em 0em 2em 0em;
+}
+.speaker {
+  overflow: auto;
+  border-bottom: dotted 1px #ccc;
+  padding-top: 1em;
+}
+.speaker img {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.speaker-pic {
+  -webkit-animation: hue 24s linear 120s infinite;
+  animation: hue 24s linear 120s infinite;
+}
+.speaker .title {
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: Klinik, serif;
+}
+.sponsors {
+  margin-top: 1em;
+  clear: both;
+}
+.title-hed {
+  background: #ffeb94;
+  display: inline-block;
+  margin-left: -40em;
+  padding: .3em .75em .25em 40em;
+}
+.logos {
+  clear: both;
+  text-align: center;
+  margin: 1em 0 3em 0;
+}
+.logos img {
+  display: inline-block;
+  width: 450px;
+}
+.sponsor-call {
+  display: block;
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+}
+.coc {
+  background: #eee;
+  padding: 1em 0;
+  margin-top: 1em;
+}
+.coc p {
+  line-height: 1.4;
+  margin: 1.5em auto 1.4em auto;
+  max-width: 350px;
+  text-align: center;
+  width: 90%;
+}
+
+.foot {
+  background: #3b3b3b;
+  margin: 0;
+  padding: .85em 0 .75em 0;
+}
+.foot p {
+  color: #ddd;
+  display: block;
+  font-size: .8em;
+  margin: 0;
+}
+
+.robohash {
+  -webkit-animation: hue 18s linear infinite;
+  animation: hue 18s linear infinite;
+}
+
+@media ( min-width: 25em ) {
+  form .field {
+    width: 45%;
+  }
+  .primary a {
+    border-width: 3px;
+  }
+}
+
+@media ( min-width: 40em ) {
+  .primary {
+    border: none;
+  }
+  .primary a,
+  .primary a:nth-child(odd) {
+    border-width: 4px;
+    width: auto;
+    margin: 0 .5em;
+    min-width: 1px;
+    padding: .5em 4.5em .45em 4.5em;
+  }
+  form .field {
+    width: 30%;
+  }
+}
