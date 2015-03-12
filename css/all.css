@@ -40,7 +40,6 @@ ul {
 .wrap {
   margin: 0 auto;
   max-width: 60em;
-  padding: 1em;
 }
 .sidebar {
   background: #fae06e;
@@ -82,6 +81,20 @@ img {
   padding-bottom: 16em;
   -webkit-animation: hue 60s linear 12s infinite;
   animation: hue 60s linear 12s infinite;
+
+}
+
+.headerwrap {
+  padding-top: 6%;
+
+}
+
+.infoheader {
+  background: rgba(0,0,0,0.5);
+  width: 60%;
+  padding: 2em;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 .logo {
   padding: 0.4em;
@@ -91,6 +104,7 @@ img {
   width: 200px;
   text-align: center;
 }
+
 .primary {
   margin-bottom: 1px; /* fixes a Chrome rounding error */
   text-align: center;
@@ -115,6 +129,7 @@ img {
 .primary a:hover, .sidebar a.call:hover {
   background: #FBDF66;
   color: #3b3b3b;
+  transition: 0.5s;
 }
 .eventhead {
   margin-bottom: 2em;
@@ -136,6 +151,21 @@ img {
   font-size: 1.2em;
   padding: 0 .1em;
 }
+
+.date, .local {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.date {
+  padding-bottom: 0;
+}
+.local {
+  padding-top: 0;
+  padding-bottom: 2em;
+}
+
 .past-events ul {
   margin: .25em 0em 2em 0em;
 }
@@ -235,5 +265,11 @@ img {
   }
   form .field {
     width: 30%;
+  }
+}
+
+@media (max-width: 680px) {
+  .infoheader {
+    width: 95%;
   }
 }
