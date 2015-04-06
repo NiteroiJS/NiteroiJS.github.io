@@ -168,13 +168,19 @@ img {
   padding: .3em .75em .25em 40em;
 }
 .logos {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: baseline;
+  align-content: space-between;
   clear: both;
   text-align: center;
   margin: 1em 0 3em 0;
 }
 .logos img {
   display: inline-block;
-  width: 450px;
+  width: 300px;
+  margin: 1.5em;
 }
 .sponsor-call {
   display: block;
