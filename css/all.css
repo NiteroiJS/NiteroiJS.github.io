@@ -41,37 +41,6 @@ ul {
   margin: 0 auto;
   max-width: 60em;
 }
-.sidebar {
-  background: #fae06e;
-  padding: 1em;
-  text-align: center;
-}
-.rsvp {
-  border: solid #3b3b3b;
-  overflow: auto;
-  color: #3b3b3b;
-}
-.rsvp h2 {
-  font-size: 1.3em;
-}
-.rsvp .paul {
-  float: right;
-}
-.rsvp p {
-  margin-bottom: 0
-}
-.rsvp p a {
-  display: block;
-  margin: 1em 0;
-}
-.a11y-hide {
-  color: transparent;
-  display: block;
-  font-size: 1px;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-}
 img {
   max-width: 100%;
 }
